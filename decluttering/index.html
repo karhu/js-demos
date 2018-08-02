@@ -8,7 +8,7 @@
     For more information about the visualization-point-styles sample, read the original sample description at developers.arcgis.com.
     https://developers.arcgis.com/javascript/latest/visualization-point-styles/index.html
     -->
-  <title>Point styles for cities - 4.8</title>
+  <title>Point Styles Decluttering</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
     <script src="https://js.arcgis.com/4.8/"></script>
 
@@ -69,6 +69,22 @@
             }
           }
         });
+
+        view.camera = {
+          "position":{
+            "spatialReference":{
+              "latestWkid":3857,
+              "wkid":102100
+            },
+            "x":536724.4805093722,
+            "y":5717415.490646589,
+            "z":4951.493360249326
+          },
+          "heading":2.8462436341064494,
+          "tilt":73.04834774434879
+        };
+
+        window.view = view;
 
         // verticalOffset shifts the symbol vertically
         var verticalOffset = {
